@@ -2,7 +2,7 @@ export const BOND_DATA = [
   {
     projectId: "ABC1234",
     title: "2021 New High School",
-    Description:
+    description:
       "The new school will be located on donated land on the western side of the Texas Medical Center. ",
     category: "New Buildings",
     campus: "N/A",
@@ -17,7 +17,7 @@ export const BOND_DATA = [
   {
     projectId: "ABC1235",
     title: "2021 New High School",
-    Description:
+    description:
       "The new school will be located on donated land on the western side of the Texas Medical Center. ",
     category: "New Buildings",
     campus: "N/A",
@@ -32,7 +32,7 @@ export const BOND_DATA = [
   {
     projectId: "ABC1236",
     title: "2021 New High School",
-    Description:
+    description:
       "The new school will be located on donated land on the western side of the Texas Medical Center. ",
     category: "New Buildings",
     campus: "N/A",
@@ -47,7 +47,7 @@ export const BOND_DATA = [
   {
     projectId: "ABC1237",
     title: "2021 New High School",
-    Description:
+    description:
       "The new school will be located on donated land on the western side of the Texas Medical Center. ",
     category: "New Buildings",
     campus: "N/A",
@@ -60,3 +60,13 @@ export const BOND_DATA = [
     actualCompletion: "MM/DD/YYYY",
   },
 ];
+
+export function getData() {
+  fetch("https://randomuser.me/api/?gender=female&results=10")
+    .then((res) => {
+      res.json();
+    })
+    .then((response) => {
+      console.log(response);
+    });
+}

@@ -13,3 +13,29 @@ body {
 h1 {
   color: #031964;
 }
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #09fafa;
+  width: 80%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid red;
+  width: 30%;
+  height: 10rem;
+  margin: 1rem;
+}
