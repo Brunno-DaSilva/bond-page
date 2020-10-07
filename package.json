@@ -1,0 +1,20 @@
+{
+  "name": "bondPages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/Brunno-DaSilva/bond-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brunno-DaSilva/bond-page/issues"
+  },
+  "homepage": "https://github.com/Brunno-DaSilva/bond-page#readme"
+}

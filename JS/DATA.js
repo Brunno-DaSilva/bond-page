@@ -1,4 +1,4 @@
-export default BOND_DATA = [
+export const BOND_DATA = [
   {
     projectId: "ABC1234",
     title: "2021 New High School",
