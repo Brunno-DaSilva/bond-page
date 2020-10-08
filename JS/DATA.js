@@ -60,13 +60,3 @@ export const BOND_DATA = [
     actualCompletion: "MM/DD/YYYY",
   },
 ];
-
-export function getData() {
-  fetch("https://randomuser.me/api/?gender=female&results=10")
-    .then((res) => {
-      res.json();
-    })
-    .then((response) => {
-      console.log(response);
-    });
-}
