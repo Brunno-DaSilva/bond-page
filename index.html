@@ -8,14 +8,36 @@
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
   <body>
-    <h1>Wierd Monsters</h1>
-    <div id="app">
-      <h1>Main Container</h1>
+    <header>
+      <h1>Filter Data</h1>
+    </header>
 
-      <button>Get Data</button>
+    <div id="app">
+      <form class="search-form">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search"
+            placeholder="Enter a Search term..."
+          />
+        </div>
+        <div class="dropdown-container">
+          <label class="dataType-title" for="dataType">Data Type:</label>
+
+          <select id="dataType" name="cards">
+            <option value="selectCard">All Information</option>
+            <option value="title">Title</option>
+            <option value="campusType">campusType</option>
+          </select>
+        </div>
+        <div class="btn-container">
+          <input type="button" onclick="selectDropdown()" value="Search" />
+        </div>
+      </form>
+      <ul class="suggestions"></ul>
     </div>
 
     <!--Main JS app-->
-    <script type="module" src="./JS/app.js"></script>
+    <script src="./JS/app.js"></script>
   </body>
 </html>
