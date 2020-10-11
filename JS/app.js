@@ -233,11 +233,28 @@ function displayMatches() {
         <div>
           <img src=${data.img} alt=${data.title} />
         </div>
-          <span class="name"><span class="title">Title:</span> ${data.title}</span>
+          <div class="item-wrapper">
+            <span class="item-title">
+              Title:
+            </span> 
+            <span class="item">
+              ${data.title}
+            </span>
+          </div>
         </div>
         <div class="items-body">
-          <span class="email"><span class="title-2">Campus Type: </span> ${data.campusType}</span>
-          <span class="email"><span class="title">Category:</span> ${data.category}</span>
+          <div class="item-wrapper">
+            <span class="item-title">Campus Type: </span> 
+            <span class="item">${data.campusType}</span>
+          </div>
+          <div class="item-wrapper">
+            <span class="item-title">Category:</span> 
+            <span class="item">${data.category}</span>
+          </div>
+          <div class="item-wrapper">
+            <span class="item-title">Category:</span> 
+            <span class="item">${data.category}</span>
+          </div>
         </div>
       </div>
       `;
@@ -266,8 +283,11 @@ function selectDropdown() {
           <span class="name"><span class="title">Title:</span> ${data.title}</span>
         </div>
         <div class="items-body">
-          <span class="email"><span class="title-2">Campus Type: </span> ${data.campusType}</span>
-          <span class="email"><span class="title">Category:</span> ${data.category}</span>
+          <span class="item-wrapper">
+          <span class="title-2">Campus Type: </span> 
+          ${data.campusType}
+          </span>
+          <span class="item-wrapper"><span class="title">Category:</span> ${data.category}</span>
         </div>
       </div>
             `;
