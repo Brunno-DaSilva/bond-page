@@ -17,6 +17,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 56652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505291/neonbrand-zFSo6bnZJTw-unsplash_1_q3dvgg.jpg",
   },
   {
     projectId: "ABC1231",
@@ -32,6 +34,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 26652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505231/element5-digital-OyCl7Y4y0Bk-unsplash_x8xsvz.jpg",
   },
   {
     projectId: "ABC1232",
@@ -47,6 +51,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 37652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505164/deleece-cook-zzjLGF_6dx4-unsplash_1_hjkqeh.jpg",
   },
   {
     projectId: "ABC1233",
@@ -62,6 +68,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 37652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505085/tim-mossholder-WE_Kv_ZB1l0-unsplash_1_x8iqrj.jpg",
   },
   {
     projectId: "ABC1234",
@@ -77,6 +85,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 36652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505052/cdc-GDokEYnOfnE-unsplash_1_fmcyhc.jpg",
   },
   {
     projectId: "ABC1235",
@@ -92,6 +102,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 19652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505021/ben-mullins-je240KkJIuA-unsplash_1_svdhzv.jpg",
   },
   {
     projectId: "ABC1236",
@@ -107,6 +119,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 50652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1598504075/friscoISD_sezpau.png",
   },
   {
     projectId: "ABC1237",
@@ -122,6 +136,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 27652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1598502460/pencil_sl098k.jpg",
   },
   {
     projectId: "ABC1238",
@@ -137,6 +153,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 29652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1602433185/hamilton-hs_siuobu.jpg",
   },
   {
     projectId: "ABC1239",
@@ -152,6 +170,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 24652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1602433230/hc-const_vxrkcn.jpg",
   },
   {
     projectId: "ABC1240",
@@ -167,6 +187,8 @@ const dataSet = [
     completionPercent: 90,
     finalCost: 30652000,
     actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1602433275/hc-bus_znhbco.jpg",
   },
 ];
 
