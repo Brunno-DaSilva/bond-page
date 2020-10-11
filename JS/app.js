@@ -216,13 +216,14 @@ function selectDropdown() {
     const html2 = dataSet
       .map((data) => {
         return `
-            <div>
-            <li>
-            <span class="name"><span class="title">Name:</span> ${data.title}</span>
-           </li>
-            <li>
-            <span class="email"><span class="title">Email:</span> ${data.campusType}</span>
-            </li>
+            <div class="searched-items">
+              <li>
+                <span class="name"><span class="title">Title:</span> ${data.title}</span>
+              </li>
+              <li>
+                <span class="email"><span class="title-2">Campus Type</span> ${data.campusType}</span>
+                <span class="email"><span class="title">Category:</span> ${data.category}</span>
+              </li>
             </div>
             `;
       })
