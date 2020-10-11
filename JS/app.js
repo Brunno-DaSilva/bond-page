@@ -4,6 +4,21 @@ const baseURL = `https://jsonplaceholder.typicode.com/users`;
 
 const dataSet = [
   {
+    projectId: "ABC1230",
+    title: "Prosper Middle School",
+    description:
+      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention",
+    category: "Security",
+    campus: "N/A",
+    campusType: "Middle School",
+    projectBudget: 56632000,
+    isCompleted: false,
+    projectCompletion: "MM/DD/YYYY",
+    completionPercent: 90,
+    finalCost: 56652000,
+    actualCompletion: "MM/DD/YYYY",
+  },
+  {
     projectId: "ABC1231",
     title: "Frisco SomeWhat Middle School",
     description:
