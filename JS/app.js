@@ -35,7 +35,7 @@ const dataSet = [
     finalCost: 26652000,
     actualCompletion: "MM/DD/YYYY",
     img:
-      "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505231/element5-digital-OyCl7Y4y0Bk-unsplash_x8xsvz.jpg",
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436709/small-libra_p0at5d.jpg",
   },
   {
     projectId: "ABC1232",
@@ -190,6 +190,23 @@ const dataSet = [
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1602433275/hc-bus_znhbco.jpg",
   },
+  {
+    projectId: "ABC1241",
+    title: "PlanoPark High School",
+    description:
+      "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
+    category: "New Schools",
+    campus: "N/A",
+    campusType: "High School",
+    projectBudget: 40632000,
+    isCompleted: false,
+    projectCompletion: "MM/DD/YYYY",
+    completionPercent: 90,
+    finalCost: 45652000,
+    actualCompletion: "MM/DD/YYYY",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436864/small-hs-plano_x3hktu.jpg",
+  },
 ];
 
 const findMatches = (wordToMatch, dataSet) => {
@@ -212,13 +229,16 @@ function displayMatches() {
     .map((data) => {
       return `
       <div class="searched-items">
-        <li>
+        <div class="items-head">
+        <div>
+          <img src=${data.img} alt=${data.title} />
+        </div>
           <span class="name"><span class="title">Title:</span> ${data.title}</span>
-        </li>
-        <li>
-          <span class="email"><span class="title-2">Campus Type</span> ${data.campusType}</span>
+        </div>
+        <div class="items-body">
+          <span class="email"><span class="title-2">Campus Type: </span> ${data.campusType}</span>
           <span class="email"><span class="title">Category:</span> ${data.category}</span>
-        </li>
+        </div>
       </div>
       `;
     })
@@ -238,15 +258,18 @@ function selectDropdown() {
     const html2 = dataSet
       .map((data) => {
         return `
-            <div class="searched-items">
-              <li>
-                <span class="name"><span class="title">Title:</span> ${data.title}</span>
-              </li>
-              <li>
-                <span class="email"><span class="title-2">Campus Type</span> ${data.campusType}</span>
-                <span class="email"><span class="title">Category:</span> ${data.category}</span>
-              </li>
-            </div>
+        <div class="searched-items">
+        <div class="items-head">
+        <div>
+          <img src=${data.img} alt=${data.title} />
+        </div>
+          <span class="name"><span class="title">Title:</span> ${data.title}</span>
+        </div>
+        <div class="items-body">
+          <span class="email"><span class="title-2">Campus Type: </span> ${data.campusType}</span>
+          <span class="email"><span class="title">Category:</span> ${data.category}</span>
+        </div>
+      </div>
             `;
       })
       .join("");
@@ -255,9 +278,9 @@ function selectDropdown() {
     const html3 = dataSet
       .map((data) => {
         return `
-            <li>
-            <span class="email">${data.campusType}</span>
-            </li>
+            <div>
+              <span class="email">${data.campusType}</span>
+            </div>
             `;
       })
       .join("");
@@ -266,9 +289,9 @@ function selectDropdown() {
     const html4 = dataSet
       .map((data) => {
         return `
-            <li>
-            <span class="email">${data.title}</span>
-            </li>
+            <div>
+              <span class="email">${data.title}</span>
+            </div>
             `;
       })
       .join("");
