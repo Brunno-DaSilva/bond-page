@@ -209,40 +209,6 @@ const dataSet = [
   },
 ];
 
-const htmlData = (data) => {
-  return `
-  <div class="searched-items">
-    <div class="items-head">
-    <div>
-      <img src=${data.img} alt=${data.title} />
-    </div>
-      <div class="item-wrapper">
-        <span class="item-title">
-          Title:
-        </span> 
-        <span class="item">
-          ${data.title}
-        </span>
-      </div>
-    </div>
-    <div class="items-body">
-      <div class="item-wrapper">
-        <span class="item-title">Campus Type: </span> 
-        <span class="item">${data.campusType}</span>
-      </div>
-      <div class="item-wrapper">
-        <span class="item-title">Category:</span> 
-        <span class="item">${data.category}</span>
-      </div>
-      <div class="item-wrapper">
-        <span class="item-title">Category:</span> 
-        <span class="item">${data.category}</span>
-      </div>
-    </div>
-  </div>
-  `;
-};
-
 const findMatches = (wordToMatch, dataSet) => {
   return dataSet.filter((data) => {
     //regex
