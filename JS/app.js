@@ -192,12 +192,12 @@ const dataSet = [
   },
   {
     projectId: "ABC1241",
-    title: "PlanoPark High School",
+    title: "Land for Future School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
     category: "New Schools",
     campus: "N/A",
-    campusType: "High School",
+    campusType: "Other",
     projectBudget: 40632000,
     isCompleted: false,
     projectCompletion: "MM/DD/YYYY",
@@ -208,6 +208,40 @@ const dataSet = [
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436864/small-hs-plano_x3hktu.jpg",
   },
 ];
+
+const htmlData = (data) => {
+  return `
+  <div class="searched-items">
+    <div class="items-head">
+    <div>
+      <img src=${data.img} alt=${data.title} />
+    </div>
+      <div class="item-wrapper">
+        <span class="item-title">
+          Title:
+        </span> 
+        <span class="item">
+          ${data.title}
+        </span>
+      </div>
+    </div>
+    <div class="items-body">
+      <div class="item-wrapper">
+        <span class="item-title">Campus Type: </span> 
+        <span class="item">${data.campusType}</span>
+      </div>
+      <div class="item-wrapper">
+        <span class="item-title">Category:</span> 
+        <span class="item">${data.category}</span>
+      </div>
+      <div class="item-wrapper">
+        <span class="item-title">Category:</span> 
+        <span class="item">${data.category}</span>
+      </div>
+    </div>
+  </div>
+  `;
+};
 
 const findMatches = (wordToMatch, dataSet) => {
   return dataSet.filter((data) => {
@@ -227,37 +261,7 @@ function displayMatches() {
 
   const html = matchArray
     .map((data) => {
-      return `
-      <div class="searched-items">
-        <div class="items-head">
-        <div>
-          <img src=${data.img} alt=${data.title} />
-        </div>
-          <div class="item-wrapper">
-            <span class="item-title">
-              Title:
-            </span> 
-            <span class="item">
-              ${data.title}
-            </span>
-          </div>
-        </div>
-        <div class="items-body">
-          <div class="item-wrapper">
-            <span class="item-title">Campus Type: </span> 
-            <span class="item">${data.campusType}</span>
-          </div>
-          <div class="item-wrapper">
-            <span class="item-title">Category:</span> 
-            <span class="item">${data.category}</span>
-          </div>
-          <div class="item-wrapper">
-            <span class="item-title">Category:</span> 
-            <span class="item">${data.category}</span>
-          </div>
-        </div>
-      </div>
-      `;
+      return htmlData(data);
     })
     .join("");
   suggestions.innerHTML = html;
@@ -269,53 +273,52 @@ function selectDropdown() {
   const dataType = document.getElementById("dataType");
   const selectedValue = dataType.options[dataType.selectedIndex].value;
 
-  if (selectedValue == "selectCard") {
+  if (selectedValue == "selectAll") {
     // alert("selectCard");
 
     const html2 = dataSet
       .map((data) => {
-        return `
-        <div class="searched-items">
-        <div class="items-head">
-        <div>
-          <img src=${data.img} alt=${data.title} />
-        </div>
-          <span class="name"><span class="title">Title:</span> ${data.title}</span>
-        </div>
-        <div class="items-body">
-          <span class="item-wrapper">
-          <span class="title-2">Campus Type: </span> 
-          ${data.campusType}
-          </span>
-          <span class="item-wrapper"><span class="title">Category:</span> ${data.category}</span>
-        </div>
-      </div>
-            `;
+        return htmlData(data);
       })
       .join("");
     suggestions.innerHTML = html2;
-  } else if (selectedValue == "title") {
+  } else if (selectedValue == "highSchool") {
     const html3 = dataSet
       .map((data) => {
-        return `
-            <div>
-              <span class="email">${data.campusType}</span>
-            </div>
-            `;
+        if (data.campusType.match(/\b(\w*High\w*)\b/g)) {
+          return htmlData(data);
+        }
       })
       .join("");
+
     suggestions.innerHTML = html3;
-  } else if (selectedValue == "campusType") {
+  } else if (selectedValue == "elementarySchool") {
     const html4 = dataSet
       .map((data) => {
-        return `
-            <div>
-              <span class="email">${data.title}</span>
-            </div>
-            `;
+        if (data.campusType.match(/\b(\w*Elementary\w*)\b/g)) {
+          return htmlData(data);
+        }
       })
       .join("");
     suggestions.innerHTML = html4;
+  } else if (selectedValue == "middleSchool") {
+    const html5 = dataSet
+      .map((data) => {
+        if (data.campusType.match(/\b(\w*Middle\w*)\b/gi)) {
+          return htmlData(data);
+        }
+      })
+      .join("");
+    suggestions.innerHTML = html5;
+  } else if (selectedValue == "other") {
+    const html6 = dataSet
+      .map((data) => {
+        if (data.campusType.match(/\b(\w*Other\w*)\b/gi)) {
+          return htmlData(data);
+        }
+      })
+      .join("");
+    suggestions.innerHTML = html6;
   }
 }
 
