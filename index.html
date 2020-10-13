@@ -33,8 +33,28 @@
             <option value="other">Other</option>
           </select>
         </div>
+
+        <div class="dropdown-container">
+          <label class="dataType-title" for="dataType">Project Category:</label>
+
+          <select id="projectCategory" name="cards">
+            <option value="selectAll">All Categories</option>
+            <option value="newBuildings">New Buildings</option>
+            <option value="athletics">Athletics</option>
+            <option value="fineArts">Fine Arts</option>
+            <option value="transportation">Transportation</option>
+            <option value="repairMaintenance">Repair & Maintenance</option>
+            <option value="refreshRenew">Refresh/Renew</option>
+            <option value="playground">Playground</option>
+            <option value="FF&E">FF&E</option>
+            <option value="security">Security</option>
+            <option value="technology">Technology</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
         <div class="btn-container">
-          <input type="button" onclick="selectDropdown()" value="Search" />
+          <input id="btn-form" type="button"  value="Search" />
         </div>
       </form>
       <div class="suggestions"></div>

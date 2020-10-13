@@ -1,5 +1,6 @@
 const searchInput = document.querySelector(".search");
 const suggestions = document.querySelector(".suggestions");
+const btnForm = document.getElementById("btn-form");
 const baseURL = `https://jsonplaceholder.typicode.com/users`;
 
 const dataSet = [
@@ -208,6 +209,7 @@ const dataSet = [
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436864/small-hs-plano_x3hktu.jpg",
   },
 ];
+//Cards
 const htmlData = (data) => {
   return `
   <div class="searched-items">
@@ -251,6 +253,8 @@ const htmlData = (data) => {
   </div>
   `;
 };
+
+//Search
 const findMatches = (wordToMatch, dataSet) => {
   return dataSet.filter((data) => {
     //regex
@@ -275,19 +279,48 @@ function displayMatches() {
   suggestions.innerHTML = html;
 }
 
+// DropDownFilter
 function selectDropdown() {
   const dataType = document.getElementById("dataType");
+  const projectCategory = document.getElementById("projectCategory");
+
+  const projectValue =
+    projectCategory.options[projectCategory.selectedIndex].value;
   const selectedValue = dataType.options[dataType.selectedIndex].value;
 
   if (selectedValue == "selectAll") {
     // alert("selectCard");
 
-    const html2 = dataSet
-      .map((data) => {
-        return htmlData(data);
-      })
-      .join("");
-    suggestions.innerHTML = html2;
+    if (projectValue == "security") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Security\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "newBuildings") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*New\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else {
+      const html2 = dataSet
+        .map((data) => {
+          return htmlData(data);
+        })
+        .join("");
+      suggestions.innerHTML = html2;
+    }
   } else if (selectedValue == "highSchool") {
     const html3 = dataSet
       .map((data) => {
@@ -328,4 +361,5 @@ function selectDropdown() {
   }
 }
 
+btnForm.addEventListener("click", selectDropdown);
 searchInput.addEventListener("keyup", displayMatches);

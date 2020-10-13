@@ -38,7 +38,7 @@ export const BOND_DATA = [
     title: "Independence W. Elementary School",
     description:
       "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention",
-    category: "Security",
+    category: "Playground",
     campus: "N/A",
     campusType: "Elementary School",
     projectBudget: 35632000,
@@ -55,7 +55,7 @@ export const BOND_DATA = [
     title: "Independence W. Middle School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center. ",
-    category: "New Schools",
+    category: "Fine Arts",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 35632000,
@@ -72,7 +72,7 @@ export const BOND_DATA = [
     title: "Custer W. High School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center. ",
-    category: "New Schools",
+    category: "Transportation",
     campus: "N/A",
     campusType: "High School",
     projectBudget: 36632000,
@@ -106,7 +106,7 @@ export const BOND_DATA = [
     title: "Main ST Middle School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
-    category: "New Schools",
+    category: "New Buildings",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 50632000,
@@ -157,7 +157,7 @@ export const BOND_DATA = [
     title: "Military Frisco High School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
-    category: "New Schools",
+    category: "New Buildings",
     campus: "N/A",
     campusType: "High School",
     projectBudget: 23632000,
@@ -174,7 +174,7 @@ export const BOND_DATA = [
     title: "Waren Universal Middle School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
-    category: "New Schools",
+    category: "New Buildings",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 30632000,
@@ -191,7 +191,7 @@ export const BOND_DATA = [
     title: "Land for Future School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
-    category: "New Schools",
+    category: "New Buildings",
     campus: "N/A",
     campusType: "Other",
     projectBudget: 40632000,

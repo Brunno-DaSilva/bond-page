@@ -98,7 +98,8 @@ h1 {
   padding: 0.5rem 0;
 }
 
-#dataType {
+#dataType,
+#projectCategory {
   width: 70%;
   border: none;
   color: #5c5b5b;
