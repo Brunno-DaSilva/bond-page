@@ -7,16 +7,16 @@ const dataSet = [
     projectId: "ABC1230",
     title: "Prosper Middle School",
     description:
-      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention",
+      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
     category: "Security",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 56632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
-    completionPercent: 90,
+    projectCompletion: "03/26/2022",
+    completionPercent: 35,
     finalCost: 56652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505291/neonbrand-zFSo6bnZJTw-unsplash_1_q3dvgg.jpg",
   },
@@ -24,16 +24,16 @@ const dataSet = [
     projectId: "ABC1231",
     title: "Frisco SomeWhat Middle School",
     description:
-      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention",
+      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
     category: "Security",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 26632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
-    completionPercent: 90,
+    projectCompletion: "03/26/2022",
+    completionPercent: 35,
     finalCost: 26652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436709/small-libra_p0at5d.jpg",
   },
@@ -41,16 +41,16 @@ const dataSet = [
     projectId: "ABC1232",
     title: "Independence W. Elementary School",
     description:
-      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention",
+      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
     category: "Security",
     campus: "N/A",
     campusType: "Elementary School",
     projectBudget: 35632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
-    completionPercent: 90,
+    projectCompletion: "03/26/2022",
+    completionPercent: 35,
     finalCost: 37652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505164/deleece-cook-zzjLGF_6dx4-unsplash_1_hjkqeh.jpg",
   },
@@ -58,16 +58,16 @@ const dataSet = [
     projectId: "ABC1233",
     title: "Independence W. Middle School",
     description:
-      "The new school will be located on donated land on the western side of the Texas Medical Center. ",
+      "The new school will be located on donated land on the western side of the Texas Medical Center. In November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
     category: "New Schools",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 35632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
-    completionPercent: 90,
+    projectCompletion: "03/26/2022",
+    completionPercent: 35,
     finalCost: 37652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505085/tim-mossholder-WE_Kv_ZB1l0-unsplash_1_x8iqrj.jpg",
   },
@@ -75,16 +75,16 @@ const dataSet = [
     projectId: "ABC1234",
     title: "Custer W. High School",
     description:
-      "The new school will be located on donated land on the western side of the Texas Medical Center. ",
+      "The new school will be located on donated land on the western side of the Texas Medical Center. In November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
     category: "New Schools",
     campus: "N/A",
     campusType: "High School",
     projectBudget: 36632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
+    projectCompletion: "03/26/2022",
     completionPercent: 90,
     finalCost: 36652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505052/cdc-GDokEYnOfnE-unsplash_1_fmcyhc.jpg",
   },
@@ -92,16 +92,16 @@ const dataSet = [
     projectId: "ABC1235",
     title: "Frisco Elementary School",
     description:
-      "Maintain regular preventative maintenance, repair and replacement cycles for buildings",
+      "Maintain regular preventative maintenance, repair, and replacement cycles for buildings. In November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
     category: "Renovation",
     campus: "N/A",
     campusType: "Elementary School",
     projectBudget: 16632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
+    projectCompletion: "03/26/2022",
     completionPercent: 90,
     finalCost: 19652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505021/ben-mullins-je240KkJIuA-unsplash_1_svdhzv.jpg",
   },
@@ -115,10 +115,10 @@ const dataSet = [
     campusType: "Middle School",
     projectBudget: 50632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
+    projectCompletion: "03/26/2022",
     completionPercent: 90,
     finalCost: 50652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1598504075/friscoISD_sezpau.png",
   },
@@ -126,16 +126,16 @@ const dataSet = [
     projectId: "ABC1237",
     title: "Abraham Lincoln Frisco High School",
     description:
-      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention",
+      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
     category: "Security",
     campus: "N/A",
     campusType: "High School",
     projectBudget: 21632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
+    projectCompletion: "03/26/2022",
     completionPercent: 90,
     finalCost: 27652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1598502460/pencil_sl098k.jpg",
   },
@@ -143,16 +143,16 @@ const dataSet = [
     projectId: "ABC1238",
     title: "Navy Frisco High School",
     description:
-      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention",
+      "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
     category: "Security",
     campus: "N/A",
     campusType: "High School",
     projectBudget: 29632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
+    projectCompletion: "03/26/2022",
     completionPercent: 90,
     finalCost: 29652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1602433185/hamilton-hs_siuobu.jpg",
   },
@@ -166,10 +166,10 @@ const dataSet = [
     campusType: "High School",
     projectBudget: 23632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
+    projectCompletion: "03/26/2022",
     completionPercent: 90,
     finalCost: 24652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1602433230/hc-const_vxrkcn.jpg",
   },
@@ -183,10 +183,10 @@ const dataSet = [
     campusType: "Middle School",
     projectBudget: 30632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
+    projectCompletion: "03/26/2022",
     completionPercent: 90,
     finalCost: 30652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1602433275/hc-bus_znhbco.jpg",
   },
@@ -200,10 +200,10 @@ const dataSet = [
     campusType: "Other",
     projectBudget: 40632000,
     isCompleted: false,
-    projectCompletion: "MM/DD/YYYY",
+    projectCompletion: "03/26/2022",
     completionPercent: 90,
     finalCost: 45652000,
-    actualCompletion: "MM/DD/YYYY",
+    actualCompletion: "03/26/2022",
     img:
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436864/small-hs-plano_x3hktu.jpg",
   },
@@ -212,30 +212,40 @@ const htmlData = (data) => {
   return `
   <div class="searched-items">
     <div class="items-head">
-    <div>
-      <img src=${data.img} alt=${data.title} />
-    </div>
+      <div class="img-container">
+        <img src=${data.img} alt=${data.title} />
+      </div>
       <div class="item-wrapper">
-        <span class="item-title">
-          Title:
-        </span> 
-        <span class="item">
+        <div class="items-short-info">
+          <div class="short-info-holder">
+            <i class="fas fa-calendar-alt"></i>
+            <span>${data.projectCompletion}</span>
+          </div>
+          <div class="short-info-holder">
+            <i class="fas fa-coins"></i>
+            <span>$${data.projectBudget
+              .toFixed(2)
+              .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+            </span>
+          </div>
+          <div class="short-info-holders">
+            <i class="fas fa-percentage"></i>
+            <span>${data.completionPercent}
+            </span>
+          </div>
+        </div>
+
+        <p class="item-wrapper-title">
           ${data.title}
-        </span>
+        </p>
       </div>
     </div>
-    <div class="items-body">
-      <div class="item-wrapper">
-        <span class="item-title">Campus Type: </span> 
-        <span class="item">${data.campusType}</span>
+    <div class="items__body">
+      <div class="item__text-wrapper">
+        <p class="item__text">${data.description}</p>
       </div>
-      <div class="item-wrapper">
-        <span class="item-title">Category:</span> 
-        <span class="item">${data.category}</span>
-      </div>
-      <div class="item-wrapper">
-        <span class="item-title">Category:</span> 
-        <span class="item">${data.category}</span>
+      <div class="item__btn-container">
+        <button>Details</button>
       </div>
     </div>
   </div>
@@ -264,8 +274,6 @@ function displayMatches() {
     .join("");
   suggestions.innerHTML = html;
 }
-
-const errorMSG = document.querySelector("#error");
 
 function selectDropdown() {
   const dataType = document.getElementById("dataType");

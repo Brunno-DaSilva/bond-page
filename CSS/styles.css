@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 
+:root {
+  --FISD-dark-blue: #184366;
+  --FISD-light-blue: #5ab3c4;
+  --FISD-yellow: #e8b20f;
+  --FISD-light-green: #0e987d;
+  --FISD-light-orange: #e95b37;
+}
+
 *,
 *::after,
 *::before {
@@ -23,7 +31,7 @@ h1 {
   margin: 3rem 0;
   font-family: "Cutive Mono", monospace;
   font-size: 3rem;
-  color: #184366;
+  color: var(--FISD-dark-blue);
 }
 
 #app {
@@ -121,7 +129,6 @@ h1 {
 
 .searched-items {
   width: 32%;
-  height: 27rem;
   margin: 0.5rem 0;
   display: flex;
   flex-direction: column;
@@ -145,33 +152,95 @@ h1 {
   align-items: flex-start;
 }
 
+.img-container {
+  width: 100%;
+  height: 17rem;
+  overflow: hidden;
+}
+
 .items-head img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: top left;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
-.items-body {
+.item-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.items-short-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  color: #92979b;
+}
+.short-info-holder {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 41%;
+  margin: 0.3rem 0;
+}
+
+.short-info-holders {
+  flex: auto;
+}
+
+.items-short-info .fas {
+  margin: 0.5rem;
+  color: var(--FISD-light-orange);
+}
+
+.item-wrapper-title {
+  color: var(--FISD-dark-blue);
+  margin: 1rem 1.2rem;
+  font-size: 1.5rem;
+}
+
+.items__body {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-}
-.item-wrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 0.5rem;
+  padding-top: 0;
 }
 
-.item-title {
-  color: #184366;
-  font-weight: 900;
-  margin-left: 1rem;
+.item__text-wrapper {
+  margin: 0.5rem 1.2rem;
+  margin-top: 0;
+  padding-top: 0;
 }
-.item {
-  color: #92979b;
-  margin-right: 1rem;
+
+.item__text {
+  color: #7c7c7c;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+.item__btn-container {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.item__btn-container button {
+  padding: 0.7rem 3rem;
+  border: none;
+  border-radius: 1rem;
+  color: #ffffff;
+  background-color: var(--FISD-light-orange);
+}
+.item-title {
+  color: #4b6618;
+  margin-left: 1rem;
 }
