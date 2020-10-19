@@ -152,7 +152,7 @@ h1 {
   border-right: 20px solid transparent;
   border-bottom: 20px solid #ffffff;
   position: absolute;
-  top: -33%;
+  top: -30%;
   left: 76.5%;
   margin: 0.5rem;
   z-index: -1;
@@ -179,6 +179,23 @@ h1 {
   border: none;
   background-color: transparent;
   color: #a2a3a5;
+  font-size: 1.5rem;
+}
+
+.btn-filters p {
+  color: var(--FISD-dark-blue);
+  font-size: 0.7rem;
+}
+
+.btn-filters p:hover {
+  color: var(--FISD-light-blue);
+}
+
+.btn-filters:hover {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--FISD-light-blue);
   font-size: 1.5rem;
 }
 
