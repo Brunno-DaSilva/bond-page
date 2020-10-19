@@ -1,6 +1,9 @@
 const searchInput = document.querySelector(".search");
 const suggestions = document.querySelector(".suggestions");
 const btnForm = document.getElementById("btn-form");
+const btnPlus = document.getElementById("btn-plus");
+const filtersToShow = document.getElementById("filtersToShow");
+
 const baseURL = `https://jsonplaceholder.typicode.com/users`;
 
 const dataSet = [
@@ -360,6 +363,16 @@ function selectDropdown() {
     suggestions.innerHTML = html6;
   }
 }
+
+const showMoreFilters = () => {
+  if (filtersToShow.style.display === "flex") {
+    filtersToShow.style.display = "none";
+  } else {
+    filtersToShow.style.display = "flex";
+  }
+};
+
+btnPlus.addEventListener("click", showMoreFilters);
 
 btnForm.addEventListener("click", selectDropdown);
 searchInput.addEventListener("keyup", displayMatches);

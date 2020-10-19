@@ -98,6 +98,16 @@ h1 {
   padding: 0.5rem 0;
 }
 
+/*Grid btn*/
+.more__info-plus {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1.5rem;
+}
+.more__info-plus .btn-plus {
+  cursor: pointer;
+}
+
 #dataType,
 #projectCategory {
   width: 70%;
@@ -117,6 +127,37 @@ h1 {
   background-color: #184366;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+
+/*More Buttons*/
+
+.btn-more {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-plus {
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  color: #92979b;
+}
+
+.more__info-btns {
+  width: 100%;
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  display: none;
+}
+
+.btn-filters {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .suggestions {
@@ -244,4 +285,10 @@ h1 {
 .item-title {
   color: #4b6618;
   margin-left: 1rem;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: flex;
 }

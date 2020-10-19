@@ -14,7 +14,7 @@
     </header>
 
     <div id="app">
-      <form class="search-form">
+      <div class="search-form">
         <div class="search-container">
           <input
             type="text"
@@ -52,11 +52,42 @@
             <option value="other">Other</option>
           </select>
         </div>
+        <div class="more__info-plus">
+          <button id="btn-plus" title="More filter options" class="btn-plus">
+            <i class="fas fa-th"></i>
+          </button>
+        </div>
 
         <div class="btn-container">
-          <input id="btn-form" type="button"  value="Search" />
+          <input title="Search for bond information" id="btn-form" type="button"  value="Search" />
         </div>
-      </form>
+        
+      </div>
+      <div class="btn-more">
+        <div id="filtersToShow" class="more__info-btns">
+          <button class="btn-filters">
+            <i class="fas fa-coins"></i>
+          </button>
+          <button class="btn-filters">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+          <button class="btn-filters">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+          <button class="btn-filters">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+          <button class="btn-filters">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+          <button class="btn-filters">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+          <button class="btn-filters">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </div>
+      </div>
       <div class="suggestions"></div>
     </div>
 
