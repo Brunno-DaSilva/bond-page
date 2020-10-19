@@ -137,6 +137,25 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin-top: 1.2rem;
+  background-color: #ffffff;
+  z-index: 11;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #ffffff;
+  position: absolute;
+  top: -37%;
+  left: 76.5%;
+  margin: 0.5rem;
+  z-index: -1;
+  display: none;
 }
 
 .btn-plus {

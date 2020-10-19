@@ -3,6 +3,7 @@ const suggestions = document.querySelector(".suggestions");
 const btnForm = document.getElementById("btn-form");
 const btnPlus = document.getElementById("btn-plus");
 const filtersToShow = document.getElementById("filtersToShow");
+const arrow = document.getElementById("arrow");
 
 const baseURL = `https://jsonplaceholder.typicode.com/users`;
 
@@ -367,8 +368,10 @@ function selectDropdown() {
 const showMoreFilters = () => {
   if (filtersToShow.style.display === "flex") {
     filtersToShow.style.display = "none";
+    arrow.style.display = "none";
   } else {
     filtersToShow.style.display = "flex";
+    arrow.style.display = "block";
   }
 };
 
