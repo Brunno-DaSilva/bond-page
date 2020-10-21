@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bond Page</title>
 
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- Main Style -->
     <link rel="stylesheet" href="./CSS/styles.css" />
+   
+    <!-- ChartJS cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
   </head>
   <body>
     <header>
       <h1>Filter Data</h1>
     </header>
+    <!-- <div class="short-info-holders progress-bar">
+      <div class="progress-bar-value"></div>
+      <div class="progress-bar-fill"></div>
+    </div> -->
 
     <div id="app">
       <div class="search-form">
@@ -66,21 +76,24 @@
       </div>
       <div class="btn-more">
         <span id="arrow" class="arrow"></span>
+        
         <div id="filtersToShow" class="more__info-btns">
+          
           <button class="btn-filters">
             <i class="fas fa-coins"></i>
             <p>Budget Lowest to Highest</p>
           </button>
+
           <button class="btn-filters">
             <i class="fas fa-tools"></i>
             <p>Category Ascend to Descend</p>
-
           </button>
+
           <button class="btn-filters">
             <i class="fas fa-graduation-cap"></i>
             <p>School Ascend to Descend</p>
-
           </button>
+
           <button class="btn-filters">
             <i class="fas fa-edit"></i>
             <p>Project Ascend to Descend</p>

@@ -5,6 +5,7 @@ const btnPlus = document.getElementById("btn-plus");
 const filtersToShow = document.getElementById("filtersToShow");
 const arrow = document.getElementById("arrow");
 
+//API
 const baseURL = `https://jsonplaceholder.typicode.com/users`;
 
 const dataSet = [
@@ -213,7 +214,35 @@ const dataSet = [
       "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436864/small-hs-plano_x3hktu.jpg",
   },
 ];
+
+// class ProgressBar {
+//   constructor(element, initialValue = 0) {
+//     this.valueElm = element.querySelector(".progress-bar-value");
+//     this.fillElm = element.querySelector(".progress-bar-fill");
+
+//     this.setValue(initialValue);
+//   }
+//   setValue(newValue) {
+//     if (newValue < 0) {
+//       newValue = 0;
+//     }
+//     if (newValue > 100) {
+//       newValue = 100;
+//     }
+//     this.value = newValue;
+//     this.updateVal();
+//   }
+//   updateVal() {
+//     const percentage = this.value + "%";
+//     this.fillElm.style.width = percentage;
+//     this.valueElm.textContent = percentage;
+//   }
+// }
+
+// const pb1 = new ProgressBar(document.querySelector(".progress-bar"), 50);
+
 //Cards
+
 const htmlData = (data) => {
   return `
   <div class="searched-items">
@@ -234,11 +263,14 @@ const htmlData = (data) => {
               .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
             </span>
           </div>
-          <div class="short-info-holders">
-            <i class="fas fa-percentage"></i>
-            <span>${data.completionPercent}
-            </span>
+
+          <div class="short-info-holders progress-bar">
+            <div class="progress-bar-value">
+              % ${data.completionPercent}
+            </div>
+            <div class="progress-bar-fill"></div>
           </div>
+
         </div>
 
         <p class="item-wrapper-title">
@@ -375,7 +407,11 @@ const showMoreFilters = () => {
   }
 };
 
-btnPlus.addEventListener("click", showMoreFilters);
+document.addEventListener("DOMContentLoaded", () => {
+  //console.log('locked and loaded')
 
-btnForm.addEventListener("click", selectDropdown);
-searchInput.addEventListener("keyup", displayMatches);
+  btnPlus.addEventListener("click", showMoreFilters);
+
+  btnForm.addEventListener("click", selectDropdown);
+  searchInput.addEventListener("keyup", displayMatches);
+});

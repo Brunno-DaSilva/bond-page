@@ -102,10 +102,11 @@ h1 {
 .more__info-plus {
   display: flex;
   justify-content: flex-end;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
 }
 .more__info-plus .btn-plus {
   cursor: pointer;
+  padding: 0.5rem 1rem;
 }
 
 #dataType,
@@ -187,9 +188,9 @@ h1 {
   font-size: 0.7rem;
 }
 
-.btn-filters p:hover {
+/* .btn-filters p:hover {
   color: var(--FISD-light-blue);
-}
+} */
 
 .btn-filters:hover {
   cursor: pointer;
@@ -274,6 +275,32 @@ h1 {
 
 .short-info-holders {
   flex: auto;
+}
+.progress-bar {
+  position: relative;
+  border: 1px solid var(--FISD-light-orange);
+  background-color: #92979b;
+  border-radius: 0.25rem;
+  height: 25px;
+  width: 100px;
+}
+.progress-bar-fill {
+  height: 100%;
+
+  background-color: var(--FISD-light-orange);
+  transition: width 0.5s;
+  z-index: 98;
+}
+
+.progress-bar-value {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .items-short-info .fas {
