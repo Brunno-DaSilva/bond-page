@@ -4,8 +4,8 @@ const btnForm = document.getElementById("btn-form");
 const btnPlus = document.getElementById("btn-plus");
 const filtersToShow = document.getElementById("filtersToShow");
 const arrow = document.getElementById("arrow");
-const btnBu
-
+const btnCategory = document.getElementById("btn-category");
+const btnCompletion = document.getElementById("btn-completion");
 
 //API
 const baseURL = `https://jsonplaceholder.typicode.com/users`;
@@ -16,7 +16,7 @@ const dataSet = [
     title: "Prosper Middle School",
     description:
       "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
-    category: "Security",
+    category: "Technology",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 56632000,
@@ -33,7 +33,7 @@ const dataSet = [
     title: "Frisco SomeWhat Middle School",
     description:
       "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
-    category: "Security",
+    category: "Playground",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 26632000,
@@ -67,7 +67,7 @@ const dataSet = [
     title: "Independence W. Middle School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center. In November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
-    category: "New Schools",
+    category: "Refresh/Renew",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 35632000,
@@ -84,7 +84,7 @@ const dataSet = [
     title: "Custer W. High School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center. In November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
-    category: "New Schools",
+    category: "Repair & Maintenance",
     campus: "N/A",
     campusType: "High School",
     projectBudget: 36632000,
@@ -135,7 +135,7 @@ const dataSet = [
     title: "Abraham Lincoln Frisco High School",
     description:
       "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
-    category: "Security",
+    category: "Other",
     campus: "N/A",
     campusType: "High School",
     projectBudget: 21632000,
@@ -152,7 +152,7 @@ const dataSet = [
     title: "Navy Frisco High School",
     description:
       "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
-    category: "Security",
+    category: "Athletics",
     campus: "N/A",
     campusType: "High School",
     projectBudget: 29632000,
@@ -169,7 +169,7 @@ const dataSet = [
     title: "Military Frisco High School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
-    category: "New Schools",
+    category: "FF&E",
     campus: "N/A",
     campusType: "High School",
     projectBudget: 23632000,
@@ -186,7 +186,7 @@ const dataSet = [
     title: "Waren Universal Middle School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
-    category: "New Schools",
+    category: "Transportation",
     campus: "N/A",
     campusType: "Middle School",
     projectBudget: 30632000,
@@ -203,7 +203,24 @@ const dataSet = [
     title: "Land for Future School",
     description:
       "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
-    category: "New Schools",
+    category: "Fine Arts",
+    campus: "N/A",
+    campusType: "Other",
+    projectBudget: 40632000,
+    isCompleted: false,
+    projectCompletion: "03/26/2022",
+    completionPercent: 90,
+    finalCost: 45652000,
+    actualCompletion: "03/26/2022",
+    img:
+      "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436864/small-hs-plano_x3hktu.jpg",
+  },
+  {
+    projectId: "ABC1242",
+    title: "Land for Future School",
+    description:
+      "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
+    category: "Transportation",
     campus: "N/A",
     campusType: "Other",
     projectBudget: 40632000,
@@ -217,34 +234,36 @@ const dataSet = [
   },
 ];
 
-// class ProgressBar {
-//   constructor(element, initialValue = 0) {
-//     this.valueElm = element.querySelector(".progress-bar-value");
-//     this.fillElm = element.querySelector(".progress-bar-fill");
+/*
+class ProgressBar {
+  constructor(element, initialValue = 0) {
+    this.valueElm = element.querySelector(".progress-bar-value");
+    this.fillElm = element.querySelector(".progress-bar-fill");
 
-//     this.setValue(initialValue);
-//   }
-//   setValue(newValue) {
-//     if (newValue < 0) {
-//       newValue = 0;
-//     }
-//     if (newValue > 100) {
-//       newValue = 100;
-//     }
-//     this.value = newValue;
-//     this.updateVal();
-//   }
-//   updateVal() {
-//     const percentage = this.value + "%";
-//     this.fillElm.style.width = percentage;
-//     this.valueElm.textContent = percentage;
-//   }
-// }
+    this.setValue(initialValue);
+  }
+  setValue(newValue) {
+    if (newValue < 0) {
+      newValue = 0;
+    }
+    if (newValue > 100) {
+      newValue = 100;
+    }
+    this.value = newValue;
+    this.updateVal();
+  }
+  updateVal() {
+    const percentage = this.value + "%";
+    this.fillElm.style.width = percentage;
+    this.valueElm.textContent = percentage;
+  }
+}
 
-// const pb1 = new ProgressBar(document.querySelector(".progress-bar"), 50);
+const pb1 = new ProgressBar(document.querySelector(".progress-bar"), 50);
 
-//Cards
+*/
 
+// cardsHTML
 const htmlData = (data) => {
   return `
   <div class="searched-items">
@@ -292,8 +311,6 @@ const htmlData = (data) => {
   `;
 };
 
-
-
 //Search
 const findMatches = (wordToMatch, dataSet) => {
   return dataSet.filter((data) => {
@@ -331,16 +348,13 @@ function selectDropdown() {
   if (selectedValue == "selectAll") {
     // alert("selectCard");
 
-    if (projectValue == "security") {
-      const html6 = dataSet
+    if (projectValue == "selectAll") {
+      const html2 = dataSet
         .map((data) => {
-          if (data.category.match(/\b(\w*Security\w*)\b/g)) {
-            return htmlData(data);
-          }
+          return htmlData(data);
         })
         .join("");
-
-      suggestions.innerHTML = html6;
+      suggestions.innerHTML = html2;
       return;
     } else if (projectValue == "newBuildings") {
       const html6 = dataSet
@@ -353,13 +367,126 @@ function selectDropdown() {
 
       suggestions.innerHTML = html6;
       return;
+    } else if (projectValue == "athletics") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Ath\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "fineArts") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Fine\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "transportation") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Transport\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "repairMaintenance") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Repair\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "refreshRenew") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Refresh\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "playground") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Playground\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "FF&E") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*FF&E\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "security") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Security\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "technology") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Technology\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
+    } else if (projectValue == "other") {
+      const html6 = dataSet
+        .map((data) => {
+          if (data.category.match(/\b(\w*Other\w*)\b/g)) {
+            return htmlData(data);
+          }
+        })
+        .join("");
+
+      suggestions.innerHTML = html6;
+      return;
     } else {
+      const msg = `<div>
+      <h1>Search Not found here are some results</h1>
+      </div>`;
       const html2 = dataSet
         .map((data) => {
           return htmlData(data);
         })
         .join("");
-      suggestions.innerHTML = html2;
+      suggestions.innerHTML = msg + html2;
     }
   } else if (selectedValue == "highSchool") {
     const html3 = dataSet
@@ -411,9 +538,7 @@ const showMoreFilters = () => {
   }
 };
 
-
-
-
+//sorting Ascending Order
 
 document.addEventListener("DOMContentLoaded", () => {
   //console.log('locked and loaded')
