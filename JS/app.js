@@ -4,6 +4,8 @@ const btnForm = document.getElementById("btn-form");
 const btnPlus = document.getElementById("btn-plus");
 const filtersToShow = document.getElementById("filtersToShow");
 const arrow = document.getElementById("arrow");
+const btnBu
+
 
 //API
 const baseURL = `https://jsonplaceholder.typicode.com/users`;
@@ -290,6 +292,8 @@ const htmlData = (data) => {
   `;
 };
 
+
+
 //Search
 const findMatches = (wordToMatch, dataSet) => {
   return dataSet.filter((data) => {
@@ -406,6 +410,10 @@ const showMoreFilters = () => {
     arrow.style.display = "block";
   }
 };
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   //console.log('locked and loaded')
