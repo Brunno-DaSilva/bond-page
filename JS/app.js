@@ -346,8 +346,6 @@ function selectDropdown() {
   const selectedValue = dataType.options[dataType.selectedIndex].value;
 
   if (selectedValue == "selectAll") {
-    // alert("selectCard");
-
     if (projectValue == "selectAll") {
       const html2 = dataSet
         .map((data) => {
