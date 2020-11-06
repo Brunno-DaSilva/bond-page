@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnCategory = document.getElementById("btn-category");
   const btnCompletion = document.getElementById("btn-completion");
   const btnBudget = document.getElementById("btn-budget");
+  const btnSchool = document.getElementById("btn-school");
 
   //API
   const baseURL = `https://jsonplaceholder.typicode.com/users`;
@@ -532,6 +533,42 @@ document.addEventListener("DOMContentLoaded", () => {
   btnBudget.addEventListener("click", function () {
     let sortedArr = dataSet.sort((a, b) => {
       return a.projectBudget - b.projectBudget;
+    });
+    const html2 = sortedArr
+      .map((data) => {
+        return htmlData(data);
+      })
+      .join("");
+    suggestions.innerHTML = html2;
+  });
+
+  btnCategory.addEventListener("click", function () {
+    let sortedArr = dataSet.sort((a, b) => {
+      if (a.category < b.category) {
+        return -1;
+      }
+      if (a.category > b.category) {
+        return 1;
+      }
+      return 0;
+    });
+    const html2 = sortedArr
+      .map((data) => {
+        return htmlData(data);
+      })
+      .join("");
+    suggestions.innerHTML = html2;
+  });
+
+  btnSchool.addEventListener("click", function () {
+    let sortedArr = dataSet.sort((a, b) => {
+      if (a.title < b.title) {
+        return -1;
+      }
+      if (a.title > b.title) {
+        return 1;
+      }
+      return 0;
     });
     const html2 = sortedArr
       .map((data) => {
