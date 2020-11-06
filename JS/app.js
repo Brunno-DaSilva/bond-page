@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const arrow = document.getElementById("arrow");
   const btnCategory = document.getElementById("btn-category");
   const btnCompletion = document.getElementById("btn-completion");
+  const btnBudget = document.getElementById("btn-budget");
 
   //API
   const baseURL = `https://jsonplaceholder.typicode.com/users`;
@@ -233,6 +234,23 @@ document.addEventListener("DOMContentLoaded", () => {
       img:
         "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436864/small-hs-plano_x3hktu.jpg",
     },
+    {
+      projectId: "ABC1249",
+      title: "Low Frisco Middle School",
+      description:
+        "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
+      category: "Playground",
+      campus: "N/A",
+      campusType: "Middle School",
+      projectBudget: 10002000,
+      isCompleted: false,
+      projectCompletion: "03/26/2022",
+      completionPercent: 35,
+      finalCost: 26652000,
+      actualCompletion: "03/26/2022",
+      img:
+        "https://res.cloudinary.com/duprwuo4j/image/upload/v1602436709/small-libra_p0at5d.jpg",
+    },
   ];
 
   // cardsHTML
@@ -305,6 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return htmlData(data);
       })
       .join("");
+
     suggestions.innerHTML = html;
   }
 
@@ -510,8 +529,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //sorting Ascending Order
 
-  btnPlus.addEventListener("click", showMoreFilters);
+  btnBudget.addEventListener("click", function () {
+    let sortedArr = dataSet.sort((a, b) => {
+      return a.projectBudget - b.projectBudget;
+    });
+    const html2 = sortedArr
+      .map((data) => {
+        return htmlData(data);
+      })
+      .join("");
+    suggestions.innerHTML = html2;
+  });
 
+  btnPlus.addEventListener("click", showMoreFilters);
   btnForm.addEventListener("click", selectDropdown);
   searchInput.addEventListener("keyup", displayMatches);
 });
