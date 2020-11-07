@@ -6,9 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const filtersToShow = document.getElementById("filtersToShow");
   const arrow = document.getElementById("arrow");
   const btnCategory = document.getElementById("btn-category");
-  const btnCompletion = document.getElementById("btn-completion");
   const btnBudget = document.getElementById("btn-budget");
   const btnSchool = document.getElementById("btn-school");
+  const btnProject = document.getElementById("btn-project");
+  const btnDate = document.getElementById("btn-date");
+  const btnCompletion = document.getElementById("btn-completion");
 
   //API
   const baseURL = `https://jsonplaceholder.typicode.com/users`;
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1230",
       title: "Prosper Middle School",
       description:
-        "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "Technology",
       campus: "N/A",
       campusType: "Middle School",
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       projectCompletion: "03/26/2022",
       completionPercent: 35,
       finalCost: 56652000,
-      actualCompletion: "03/26/2022",
+      actualCompletion: "05/26/2022",
       img:
         "https://res.cloudinary.com/duprwuo4j/image/upload/v1598505291/neonbrand-zFSo6bnZJTw-unsplash_1_q3dvgg.jpg",
     },
@@ -35,14 +37,14 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1231",
       title: "Frisco SomeWhat Middle School",
       description:
-        "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "Playground",
       campus: "N/A",
       campusType: "Middle School",
       projectBudget: 26632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 35,
+      projectCompletion: "05/26/2022",
+      completionPercent: 13,
       finalCost: 26652000,
       actualCompletion: "03/26/2022",
       img:
@@ -52,14 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1232",
       title: "Independence W. Elementary School",
       description:
-        "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "Security",
       campus: "N/A",
       campusType: "Elementary School",
       projectBudget: 35632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 35,
+      projectCompletion: "05/21/2021",
+      completionPercent: 45,
       finalCost: 37652000,
       actualCompletion: "03/26/2022",
       img:
@@ -75,8 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
       campusType: "Middle School",
       projectBudget: 35632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 35,
+      projectCompletion: "05/21/2021",
+      completionPercent: 8,
       finalCost: 37652000,
       actualCompletion: "03/26/2022",
       img:
@@ -92,8 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
       campusType: "High School",
       projectBudget: 36632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 90,
+      projectCompletion: "05/10/2021",
+      completionPercent: 10,
       finalCost: 36652000,
       actualCompletion: "03/26/2022",
       img:
@@ -109,8 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
       campusType: "Elementary School",
       projectBudget: 16632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 90,
+      projectCompletion: "12/21/2021",
+      completionPercent: 74,
       finalCost: 19652000,
       actualCompletion: "03/26/2022",
       img:
@@ -120,14 +122,14 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1236",
       title: "Main ST Middle School",
       description:
-        "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "New Schools",
       campus: "N/A",
       campusType: "Middle School",
       projectBudget: 50632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 90,
+      projectCompletion: "01/21/2021",
+      completionPercent: 88,
       finalCost: 50652000,
       actualCompletion: "03/26/2022",
       img:
@@ -137,14 +139,14 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1237",
       title: "Abraham Lincoln Frisco High School",
       description:
-        "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "Other",
       campus: "N/A",
       campusType: "High School",
       projectBudget: 21632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 90,
+      projectCompletion: "12/02/2021",
+      completionPercent: 70,
       finalCost: 27652000,
       actualCompletion: "03/26/2022",
       img:
@@ -154,14 +156,14 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1238",
       title: "Navy Frisco High School",
       description:
-        "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "Athletics",
       campus: "N/A",
       campusType: "High School",
       projectBudget: 29632000,
       isCompleted: false,
       projectCompletion: "03/26/2022",
-      completionPercent: 90,
+      completionPercent: 26,
       finalCost: 29652000,
       actualCompletion: "03/26/2022",
       img:
@@ -171,14 +173,14 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1239",
       title: "Military Frisco High School",
       description:
-        "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "FF&E",
       campus: "N/A",
       campusType: "High School",
       projectBudget: 23632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 90,
+      projectCompletion: "03/26/2023",
+      completionPercent: 99,
       finalCost: 24652000,
       actualCompletion: "03/26/2022",
       img:
@@ -188,13 +190,13 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1240",
       title: "Waren Universal Middle School",
       description:
-        "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "Transportation",
       campus: "N/A",
       campusType: "Middle School",
       projectBudget: 30632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
+      projectCompletion: "01/03/2022",
       completionPercent: 90,
       finalCost: 30652000,
       actualCompletion: "03/26/2022",
@@ -205,14 +207,14 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1241",
       title: "Land for Future School",
       description:
-        "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "Fine Arts",
       campus: "N/A",
       campusType: "Other",
       projectBudget: 40632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 90,
+      projectCompletion: "03/10/2022",
+      completionPercent: 70,
       finalCost: 45652000,
       actualCompletion: "03/26/2022",
       img:
@@ -222,14 +224,14 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1242",
       title: "Land for Future School",
       description:
-        "The new school will be located on donated land on the western side of the Texas Medical Center.Projected Cost: $28 million ",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "Transportation",
       campus: "N/A",
       campusType: "Other",
       projectBudget: 40632000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 90,
+      projectCompletion: "03/13/2022",
+      completionPercent: 98,
       finalCost: 45652000,
       actualCompletion: "03/26/2022",
       img:
@@ -239,14 +241,14 @@ document.addEventListener("DOMContentLoaded", () => {
       projectId: "ABC1249",
       title: "Low Frisco Middle School",
       description:
-        "Areas Addressed: Additional Safety & Security, Facility Maintenance, Refresh & Renewal, Recruitment & Retention n November 2018, Frisco ISD voters approved a $691 million bond package to provide funding to build four new schools and maintain and repair existing facilities.",
+        "This project is part of the bond approved by Frisco ISD voters in November 2018. The bond package will provide funding for new schools and maintenance for existing facilities through an enrollment of 72,000 students or the 2025-26 school year.",
       category: "Playground",
       campus: "N/A",
       campusType: "Middle School",
       projectBudget: 10002000,
       isCompleted: false,
-      projectCompletion: "03/26/2022",
-      completionPercent: 35,
+      projectCompletion: "03/01/2022",
+      completionPercent: 15,
       finalCost: 26652000,
       actualCompletion: "03/26/2022",
       img:
@@ -570,6 +572,63 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       return 0;
     });
+    const html2 = sortedArr
+      .map((data) => {
+        return htmlData(data);
+      })
+      .join("");
+    suggestions.innerHTML = html2;
+  });
+
+  btnProject.addEventListener("click", function () {
+    let sortedArr = dataSet.sort((a, b) => {
+      if (a.campusType < b.campusType) {
+        return -1;
+      }
+      if (a.campusType > b.campusType) {
+        return 1;
+      }
+      return 0;
+    });
+
+    const html2 = sortedArr
+      .map((data) => {
+        return htmlData(data);
+      })
+      .join("");
+    suggestions.innerHTML = html2;
+  });
+
+  btnDate.addEventListener("click", function () {
+    let sortedArr = dataSet.sort((a, b) => {
+      if (a.projectCompletion < b.projectCompletion) {
+        return -1;
+      }
+      if (a.projectCompletion > b.projectCompletion) {
+        return 1;
+      }
+      return 0;
+    });
+
+    const html2 = sortedArr
+      .map((data) => {
+        return htmlData(data);
+      })
+      .join("");
+    suggestions.innerHTML = html2;
+  });
+
+  btnCompletion.addEventListener("click", function () {
+    let sortedArr = dataSet.sort((a, b) => {
+      if (a.completionPercent < b.completionPercent) {
+        return -1;
+      }
+      if (a.completionPercent > b.completionPercent) {
+        return 1;
+      }
+      return 0;
+    });
+
     const html2 = sortedArr
       .map((data) => {
         return htmlData(data);
