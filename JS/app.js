@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Refresh/Renew",
       campus: "N/A",
       campusType: "Middle School",
-      projectBudget: 35632000,
+      projectBudget: 150000,
       isCompleted: false,
       projectCompletion: "05/21/2021",
       completionPercent: 8,
@@ -278,7 +278,12 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="short-info-holder">
             <i class="fas fa-coins"></i>
-            <span>$${data.projectBudget.toFixed(2).slice(0, 2)}M
+            <span>$${
+              data.projectBudget >= 1000000
+                ? data.projectBudget.toFixed(2).slice(0, 2)
+                : data.projectBudget.toFixed(2).slice(0, 3)
+            } 
+            ${data.projectBudget >= 1000000 ? "M" : "K"}
             </span>
           </div>
 
