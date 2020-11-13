@@ -256,7 +256,13 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
+  // <span>$${data.projectBudget
+  //   .toFixed(2)
+  //   .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+  // </span>
+
   // cardsHTML
+
   const htmlData = (data) => {
     return `
   <div class="searched-items">
@@ -272,9 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="short-info-holder">
             <i class="fas fa-coins"></i>
-            <span>$${data.projectBudget
-              .toFixed(2)
-              .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+            <span>$${data.projectBudget.toFixed(2).replace(/(^.).*/, "$1M")}
             </span>
           </div>
 
@@ -287,9 +291,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         </div>
 
-        <p class="item-wrapper-title">
+        <h2 class="item-wrapper-title">
           ${data.title}
-        </p>
+        </h2>
+        
       </div>
     </div>
     <div class="items__body">

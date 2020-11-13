@@ -308,10 +308,11 @@ h1 {
   color: var(--FISD-light-orange);
 }
 
-.item-wrapper-title {
+.item-wrapper-title,
+h2 {
   color: var(--FISD-dark-blue);
-  margin: 1rem 1.2rem;
-  font-size: 1.5rem;
+  margin: 1rem 1.2rem !important;
+  font-size: 1.5rem !important;
 }
 
 .items__body {
@@ -333,7 +334,7 @@ h1 {
 .item__text {
   color: #7c7c7c;
   letter-spacing: 1px;
-  line-height: 1.5rem;
+  /* line-height: 1.5rem; */
 }
 .item__btn-container {
   margin: 1rem 0;
