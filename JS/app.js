@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="short-info-holder">
             <i class="fas fa-coins"></i>
-            <span>$${data.projectBudget.toFixed(2).replace(/(^.).*/, "$1M")}
+            <span>$${data.projectBudget.toFixed(2).slice(0, 2)}M
             </span>
           </div>
 
