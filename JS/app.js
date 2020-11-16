@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <div class="item__btn-container">
         <button type="button">
-          <a class="anchor-override" href="../Components/Details/details.html">
+          <a class="anchor-override" href="https://brunno-dasilva.github.io/bond-page-details/index.html">
           Details
           </a>
         </button>
