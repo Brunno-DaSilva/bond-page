@@ -188,10 +188,6 @@ h1 {
   font-size: 0.7rem;
 }
 
-/* .btn-filters p:hover {
-  color: var(--FISD-light-blue);
-} */
-
 .btn-filters:hover {
   cursor: pointer;
   border: none;
@@ -312,7 +308,8 @@ h1 {
 h2 {
   color: var(--FISD-dark-blue);
   margin: 1rem 1.2rem !important;
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
+  font-weight: lighter;
 }
 
 .items__body {
@@ -348,7 +345,18 @@ h2 {
   border-radius: 1rem;
   color: #ffffff;
   background-color: var(--FISD-light-orange);
+  transition: ease-in 0.25s;
 }
+
+.item__btn-container button:hover {
+  background-color: var(--FISD-light-blue);
+  cursor: pointer;
+}
+.anchor-override {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .item-title {
   color: #4b6618;
   margin-left: 1rem;
