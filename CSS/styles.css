@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 
 :root {
   --FISD-dark-blue: #184366;
@@ -72,13 +71,34 @@ h1 {
 .search-container input {
   width: 80%;
   border: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding: 1rem 0;
   color: #5c5b5b;
 }
+
+.search-container input:focus {
+  outline: none !important;
+  border: 2px solid var(--FISD-dark-blue);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px #969696;
+}
+
+.search-container input::selection {
+  background-color: var(--FISD-light-blue);
+  color: #ffffff;
+}
+
 .search-container input::placeholder {
   color: #a2a3a5;
   font-style: italic;
+  font-size: 1.4rem;
+}
+select option {
+  margin: 40px;
+  background: var(--FISD-dark-blue);
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
 .dropdown-container {
@@ -94,16 +114,19 @@ h1 {
 }
 
 .dataType-title {
-  font-size: 0.7rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
   padding: 0.5rem 0;
 }
 
-/*Grid btn*/
+/*More Info Grid btn*/
 .more__info-plus {
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem 1rem;
 }
+
 .more__info-plus .btn-plus {
   cursor: pointer;
   padding: 0.5rem 1rem;
@@ -196,6 +219,10 @@ h1 {
   font-size: 1.5rem;
 }
 
+/****************************************
+*            Cards Sections
+****************************************/
+
 .suggestions {
   margin-top: 1rem;
   width: 100%;
@@ -203,22 +230,24 @@ h1 {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding: 0.5rem;
 }
 
 .searched-items {
-  width: 32%;
-  margin: 0.5rem 0;
+  width: 33rem;
+  height: 53rem;
+  margin: 1.8rem 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: space-between;
+  justify-content: space-between;
   background-color: #ffffff;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .searched-items:hover {
-  cursor: pointer;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -251,6 +280,7 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  padding-top: 0.5rem;
 }
 
 .items-short-info {
@@ -261,6 +291,7 @@ h1 {
   padding: 0 0.5rem;
   color: #92979b;
 }
+
 .short-info-holder {
   display: flex;
   align-items: center;
@@ -307,8 +338,8 @@ h1 {
 .item-wrapper-title,
 h2 {
   color: var(--FISD-dark-blue);
-  margin: 1rem 1.2rem !important;
-  font-size: 1.2rem !important;
+  margin: 1.8rem 1.2rem !important;
+  font-size: 2rem !important;
   font-weight: lighter;
 }
 
@@ -331,7 +362,7 @@ h2 {
 .item__text {
   color: #7c7c7c;
   letter-spacing: 1px;
-  /* line-height: 1.5rem; */
+  line-height: 2.5rem;
 }
 .item__btn-container {
   margin: 1rem 0;
@@ -353,6 +384,10 @@ h2 {
   cursor: pointer;
 }
 .anchor-override {
+  text-decoration: none;
+  color: #ffffff;
+}
+.anchor-override:hover {
   text-decoration: none;
   color: #ffffff;
 }
