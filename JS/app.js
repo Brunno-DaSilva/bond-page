@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p class="item__text">${data.description}</p>
       </div>
       <div class="item__btn-container">
-        <button>Details</button>
+        <button type="button"><a href="../Components/details.html">Details</button>
       </div>
     </div>
   </div>
