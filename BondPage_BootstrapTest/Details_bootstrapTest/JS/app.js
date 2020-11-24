@@ -1,5 +1,3 @@
-console.log("Ciao Bella, me piacere parlare italiano");
-
 const top_Container = document.getElementById("container__top");
 
 var mySwiper = new Swiper(".swiper-container", {
